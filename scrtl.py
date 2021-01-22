@@ -12,7 +12,7 @@ from datetime import date
 # default save path
 defaultPath = pathlib.Path.home().joinpath('Videos').joinpath('scrtl')
 # list of unsupported tools
-tools = ['flameshot', 'maim', 'grim']
+tools = ['flameshot', 'maim', 'grim', 'imlib2', 'shotgun']
 
 # set command and args to capture your screen
 def defineCommand():
@@ -56,9 +56,6 @@ def render2Video():
   filename = 'scrtl_' + datetime.datetime.now().strftime('%Y%m%d%H%M') + '.mp4'
   subprocess.run([
     'ffmpeg',
-    # add silent audio
-    '-f', 'lavfi',
-    '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100',
     # set framerate
     '-framerate', str(args.fps),
     # image to process

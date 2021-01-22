@@ -10,6 +10,8 @@
 
 - [grim](https://github.com/emersion/grim) - Intended to use with **wayland** but **not gnome-wayland**
 - [maim](https://github.com/naelstrof/maim) - intended to use with X11
+- [shotgun](https://github.com/neXromancers/shotgun) - Intended to use in X11
+- [imlib2](https://docs.enlightenment.org/api/imlib2/html/) - Intended to use in X11
 - [flameshot](https://github.com/flameshot-org/flameshot) - I use this in my workspace because grim is not supported in gnome-wayland
 
 ## Usage
